@@ -42,7 +42,7 @@ resource "helm_release" "acme-cluster-issuer" {
   repository = "https://celtra.github.io/acme-cluster-issuer-helm-chart/"
   namespace  = "default"
   chart      = "acme-cluster-issuer"
-  version    = "0.1.3"
+  version    = "0.1.4"
 
   values = [
     yamlencode(
