@@ -21,7 +21,7 @@ Kubernetes Ingress with `ingressClass: traefik` is assumed, but you can adjust i
 Add chart repository to Helm:
 
 ```bash
-helm repo add acme-cluster-issuer https://deanrock.github.io/acme-cluster-issuer-helm-chart/
+helm repo add acme-cluster-issuer https://celtra.github.io/acme-cluster-issuer-helm-chart/
 ```
 
 You can update the chart repository by running:
@@ -39,7 +39,7 @@ helm install --set email=test@example.test acme-cluster-issuer acme-cluster-issu
 ```terraform
 resource "helm_release" "acme-cluster-issuer" {
   name       = "acme-cluster-issuer"
-  repository = "https://deanrock.github.io/acme-cluster-issuer-helm-chart/"
+  repository = "https://celtra.github.io/acme-cluster-issuer-helm-chart/"
   namespace  = "default"
   chart      = "acme-cluster-issuer"
   version    = "0.1.3"
